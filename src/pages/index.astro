@@ -2,9 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
 const last_posts = posts.slice(0, 3);
 ---
@@ -16,11 +18,34 @@ const last_posts = posts.slice(0, 3);
     <div class="text-xl py-3 font-bold">Software Engineer & Tech Enthusias</div>
     <div class="py-2">
       <text class="text-md">
-        I'm a Software Engineer with 3<sup>+</sup> years developing education system
-        for <b>Ministry of Education, Culture</b>
-        and 6<sup>+</sup> years experiences in developing system at a large industrial and real estate 
-        <a href="https://www.jababeka.com" target="_blank"><b>Jababeka Tbk.</b></a>
-        Now i am looking for a job to scale up my experiences.
+        I'm a Software Engineer with 11<sup>+</sup> years of experience building scalable
+        systems, APIs, and backend infrastructure across multiple industries.<br
+        />
+        I build backend systems that are designed to scale, not just to work.<br
+        />
+        I specialize in designing and developing reliable backend systems using Go,
+        with strong focus on scalability, performance, and maintainability. My experience
+        spans across API development, distributed systems, and asynchronous processing
+        (queue, worker, retry strategies).<br />
+        In my current role, I work on large-scale education platforms, building and
+        maintaining services that handle complex data workflows and integrations.
+        I’ve also been involved in system design discussions, backend architecture
+        decisions, and improving service reliability.<br />
+        Previously, I’ve worked on financial systems, land management platforms, and
+        internal business tools, where I not only developed backend services but also
+        led small teams, built queue-based notification systems, and managed infrastructure
+        (Linux/CentOS).<br /><br />
+        What I enjoy the most:<br />
+        <ul>
+          <li>
+            - Solving backend problems related to scaling and system reliability
+          </li>
+          <li>- Designing worker systems and background job processing</li>
+          <li>- Improving performance and simplifying complex systems</li>
+        </ul>
+        Lately, I’ve started sharing insights and real-world lessons about backend
+        engineering, system design, and distributed systems.<br />Open for
+        discussion, collaboration, or backend engineering opportunities.
       </text>
     </div>
 

@@ -5,15 +5,29 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+    <div class="text-3xl w-full font-bold">Professional Summary</div>
   </div>
 
   <div class="mb-10 text-justify">
-    I'm a Software Engineer with 3<sup>+</sup> years developing education system
-    for <b>Ministry of Education, Culture</b>
-    and 6<sup>+</sup> years experiences in developing system at a large industrial and real estate 
-    <a href="https://www.jababeka.com" target="_blank"><b>Jababeka Tbk.</b></a>
-    Now i am looking for a job to grow my experiences.
+    <text class="text-md">
+      I'm a Software Engineer with 11<sup>+</sup> years of experience building scalable
+      systems, APIs, and backend infrastructure across multiple industries.<br
+      />
+      I build backend systems that are designed to scale, not just to work.<br
+      />
+      I specialize in designing and developing reliable backend systems using Go,
+      with strong focus on scalability, performance, and maintainability. My experience
+      spans across API development, distributed systems, and asynchronous processing
+      (queue, worker, retry strategies).<br />
+      In my current role, I work on large-scale education platforms, building and
+      maintaining services that handle complex data workflows and integrations. I’ve
+      also been involved in system design discussions, backend architecture decisions,
+      and improving service reliability.<br />
+      Previously, I’ve worked on financial systems, land management platforms, and
+      internal business tools, where I not only developed backend services but also
+      led small teams, built queue-based notification systems, and managed infrastructure
+      (Linux/CentOS).<br />
+    </text>
   </div>
 
   <div class="mb-5">
@@ -36,87 +50,149 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       title="Software Backend Engineer at INA Digital Edu"
       subtitle="From Jan 2025 to Present at Perum Peruri, Jakarta, Indonesia"
     >
-      <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <ul class="list-disc mx-6 mb-1 grid gap-2">
         <li>
-          Deliver high quality API REST & gRPC with Golang and PostgreSQL to serve performance management system for civil servants in the ministry of primary and secondary education.
+          Designed and implemented a scalable database-driven worker engine to
+          synchronize data with eKinerja third-party systems, processing ~2
+          million records/day reliably
         </li>
         <li>
-          Manage Dataflow using ETL from BigQuery to Postgresql and vice versa, also monitoring with Airflow
+          Implemented retry mechanisms, idempotent processing, and failure
+          recovery strategies to ensure consistency across distributed systems
+        </li>
+        <li>
+          Designed queue partitioning and worker concurrency strategies to
+          optimize throughput and resource utilization
+        </li>
+        <li>
+          Built high-performance backend APIs and microservices using Golang,
+          PostgreSQL, and Redis
+        </li>
+        <li>
+          Developed analytics services powered by AlloyDB for near real-time
+          teacher performance insights
+        </li>
+        <li>
+          Contributed to architecture decisions, scalability planning, and
+          production issue troubleshooting
+        </li>
+        <li>
+          Collaborated with cross-functional teams to deliver government-scale
+          education platforms with high availability requirements
         </li>
       </ul>
+      <b>Keys:</b>
+      <p>
+        Golang, PostgreSQL, Redis, AlloyDB, GKE, Pub/Sub, Docker, Microservices,
+        REST API
+      </p><br />
     </TimeLineElement>
     <TimeLineElement
       title="Software Backend Engineer at Govtech Edu"
       subtitle="From Jun 2022 to Dec 2024 at PT. Metranet, Jakarta, Indonesia"
     >
-      <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <ul class="list-disc mx-6 mb-1 grid gap-2">
         <li>
-          Deliver high quality API REST & gRPC with Golang and PostgreSQL to serve 6.7<sup>+</sup> active users and handle Single Sign On (SSO)
-          for BelajarID account. This SSO service used by <a href='https://guru.kemdikbud.go.id' target='_blank'><b>Platform Merdeka Mengajar (PMM)</b></a>
-          and <a href='https://raporpendidikan.kemdikbud.go.id' target='_blank'><b>Rapor Pendidikan</b></a>.
+          Deliver high quality API REST & gRPC with Golang and PostgreSQL to
+          serve 6.7<sup>+</sup> active users and handle Single Sign On (SSO) for BelajarID
+          account. This SSO service used by <a
+            href="https://guru.kemdikbud.go.id"
+            target="_blank"><b>Platform Merdeka Mengajar (PMM)</b></a
+          >
+          and <a href="https://raporpendidikan.kemdikbud.go.id" target="_blank"
+            ><b>Rapor Pendidikan</b></a
+          >.
         </li>
         <li>
-          Involving to build <b>Asisten guRU</b> (ARU) AI chatbot, it's integrating with ChatGPT services to serve better experience Indonesia Teachers
-          in using <a href='https://guru.kemdikbud.go.id' target='_blank'><b>Platform Merdeka Mengajar (PMM)</b></a> 
+          Involving to build <b>Asisten guRU</b> (ARU) AI chatbot, it's integrating
+          with ChatGPT services to serve better experience Indonesia Teachers in using
+          <a href="https://guru.kemdikbud.go.id" target="_blank"
+            ><b>Platform Merdeka Mengajar (PMM)</b></a
+          >
         </li>
         <li>
-          Build Push Notification System and integrate with third parties such as OneSignal and Moengage.
-          Its available for targetted user and non-targetted user that can be sent soon and scheduling.
+          Build Push Notification System and integrate with third parties such
+          as OneSignal and Moengage. Its available for targetted user and
+          non-targetted user that can be sent soon and scheduling.
         </li>
         <li>
-          Manage Dataflow using ETL from BigQuery to Postgresql and vice versa, also monitoring with Airflow
+          Manage Dataflow using ETL from BigQuery to Postgresql and vice versa,
+          also monitoring with Airflow
         </li>
       </ul>
+      <b>Keys:</b>
+      <p>
+        Golang, PostgreSQL, Redis, GKE, Pub/Sub, Emissary, Docker, Microservices
+      </p><br />
     </TimeLineElement>
     <TimeLineElement
       title="Senior Software Engineer"
       subtitle="From May 2015 to May 2022 at Jababeka Tbk., Cikarang - Bekasi, Indonesia"
     >
-      <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <ul class="list-disc mx-6 mb-1 grid gap-2">
         <li>
-          Lead a team with 3-5 members to build high quality service and application system for internal company
-          and directly report to IT Division Manager
+          Led a team of 2–5 engineers to modernize legacy desktop-based
+          financial systems into scalable web applications
         </li>
         <li>
-          Customize Purchase & Accounting Consolidation module of Odoo ERP using Python and PostgreSQL
+          Designed and implemented enterprise workflow systems using Odoo and
+          Laravel
         </li>
         <li>
-          Develop Email & SMS Notification for Billing Collection using Laravel, MySQL and MsSQL
+          Integrated multiple internal systems through APIs to streamline
+          operational and financial processes
         </li>
         <li>
-          Build REST API for Finance Application Project using C# and MsSQL
+          Improved operational efficiency and reduced infrastructure costs for
+          enterprise users
         </li>
         <li>
-          Develop Land Management System for Land Acquisition Division to manage land-bank using Laravel and MySQL
+          Achieved ~50% faster business processing time through workflow
+          automation and system optimization
+        </li>
+        <li>
+          Collaborated with business stakeholders to gather requirements and
+          deliver scalable enterprise solutions
         </li>
       </ul>
+      <b>Keys:</b>
+      <p>PHP (Laravel), Python, Odoo, PostgreSQL, MySQL, SQL Server</p><br />
     </TimeLineElement>
     <TimeLineElement
       title="Web Programmer"
       subtitle="From Jul 2014 to Apr 2015 at PT. Duaz Solusi, Jakarta, Indonesia"
     >
-      <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <ul class="list-disc mx-6 mb-1 grid gap-2">
         <li>
-          Create School Administration Management System using Codeigniter and MySQL
+          Create School Administration Management System using Codeigniter and
+          MySQL
         </li>
         <li>
-          Build PJU Administration System to manage Penerangan Jalan Umum assets using Codeigniter integrate with Google Maps API and MySQL
+          Build PJU Administration System to manage Penerangan Jalan Umum assets
+          using Codeigniter integrate with Google Maps API and MySQL
         </li>
       </ul>
+      <b>Keys:</b>
+      <p>Codeigniter, MySQL, Google Maps API</p><br />
     </TimeLineElement>
     <TimeLineElement
       title="Junior Programmer"
       subtitle="From May 2013 to Jun 2014 at PT. Global Teknologi Media Integrasi, Jakarta, Indonesia"
     >
-      <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <ul class="list-disc mx-6 mb-1 grid gap-2">
         <li>
-          Oracle Developer at <i>Proyek Pengembangan Datawarehouse Data Kependudukan</i> 
-          for Directorate General of Population and Civil Registration, Ministry of Home Affairs
+          Oracle Developer at
+          <i>Proyek Pengembangan Datawarehouse Data Kependudukan</i>
+          for Directorate General of Population and Civil Registration, Ministry of
+          Home Affairs
         </li>
         <li>
-          Develop Log Monitoring System for track and monitoring from REST API using Codeigniter
+          Develop Log Monitoring System for track and monitoring from REST API
+          using Codeigniter
         </li>
       </ul>
+      <b>Keys:</b>
+      <p>Oracle, Codeigniter, MySQL, REST API</p><br />
     </TimeLineElement>
   </div>
 
@@ -126,25 +202,50 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="https://academy.dqlab.id/Certificate_check/result/DQLABINTP1NVFRGS#mycertificate" target="_blank">Data Manipulation with Pandas (Part 1-2) - DQLab (2023)</a>
+      <a
+        href="https://academy.dqlab.id/Certificate_check/result/DQLABINTP1NVFRGS#mycertificate"
+        target="_blank"
+        >Data Manipulation with Pandas (Part 1-2) - DQLab (2023)</a
+      >
     </li>
     <li>
-      <a href="https://academy.dqlab.id/Certificate_check/result/DQLABINTP1TMCWLU#mycertificate" target="_blank">Python for Data Professional (Part 1-3) - DQLab (2023)</a>
+      <a
+        href="https://academy.dqlab.id/Certificate_check/result/DQLABINTP1TMCWLU#mycertificate"
+        target="_blank"
+        >Python for Data Professional (Part 1-3) - DQLab (2023)</a
+      >
     </li>
     <li>
-      <a href="https://www.dicoding.com/certificates/L4PQ4YDLQXO1" target="_blank">Membuat Aplikasi Back-End (Node.js) - Dicoding (2022)</a>
+      <a
+        href="https://www.dicoding.com/certificates/L4PQ4YDLQXO1"
+        target="_blank">Membuat Aplikasi Back-End (Node.js) - Dicoding (2022)</a
+      >
     </li>
     <li>
-      <a href="https://certificates.revou.co/m-anam-certificate-completion-damc22.pdf" target="_blank">Intro to Data Analytics - RevoU (2022)</a>
+      <a
+        href="https://certificates.revou.co/m-anam-certificate-completion-damc22.pdf"
+        target="_blank">Intro to Data Analytics - RevoU (2022)</a
+      >
     </li>
     <li>
-      <a href="https://www.dicoding.com/certificates/6RPND45K9Z2M" target="_blank">Google Cloud Engineer - Dicoding (2022)</a>
+      <a
+        href="https://www.dicoding.com/certificates/6RPND45K9Z2M"
+        target="_blank">Google Cloud Engineer - Dicoding (2022)</a
+      >
     </li>
     <li>
-      <a href="https://www.dicoding.com/certificates/JLX1GJ965Z72" target="_blank">Cloud Practitioner Essentials (AWS Cloud) - Dicoding (2022)</a>
+      <a
+        href="https://www.dicoding.com/certificates/JLX1GJ965Z72"
+        target="_blank"
+        >Cloud Practitioner Essentials (AWS Cloud) - Dicoding (2022)</a
+      >
     </li>
     <li>
-      <a href="https://img-certificate.ruangguru.com/CHOIRULOJYR678VK/CERT-TNKTWQEL.jpg" target="_blank">Merancang Produk Digital untuk Product Manager - RuangGuru (2022)</a>
+      <a
+        href="https://img-certificate.ruangguru.com/CHOIRULOJYR678VK/CERT-TNKTWQEL.jpg"
+        target="_blank"
+        >Merancang Produk Digital untuk Product Manager - RuangGuru (2022)</a
+      >
     </li>
   </ul>
 
@@ -159,6 +260,8 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>React Native</li>
     <li>NodeJS</li>
     <li>NestJS</li>
+    <li>NextJS</li>
+    <li>VueJS</li>
     <li>Google Cloud Platform</li>
     <li>AWS Cloud</li>
     <li>PostgreSQL</li>
